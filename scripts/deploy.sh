@@ -24,7 +24,7 @@ git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
-git push -f git@github.com/bibAtdev/cv.git main:gh-pages
+git push -f git@github.com:bibAtdev/cv.git master:gh-pages
 
 cd -
 sleep 20s

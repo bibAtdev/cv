@@ -65,6 +65,11 @@ https://bibatdev.github.io/cv/
     pnpm run deploy-linux
     ```
 
+## Special Thanks go to
+
+* [Vue.js](https://github.com/vuejs), and the open-source community for building the technical foundation of this project.
+* [Sina Nosrati](https://github.com/nos486) for inspiering this project.
+
 ## License
 
 [MIT License](https://github.com/gywgithub/vue-d3-examples/blob/master/LICENSE)

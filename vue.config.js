@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: '/cv/'
+  publicPath: '/cv/',
+
 }

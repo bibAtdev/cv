@@ -8,8 +8,8 @@
     </Item>
 </template>
 <script>
-import Item from "@/modules/resume/components/UI/Item"
-import SkillItems from "@/modules/resume/components/UI/SkilIltems"
+import Item from "@/modules/resume/components/Item"
+import SkillItems from "@/modules/resume/components/Skills-Items"
 
 export default {
     name: 'Skills-Component',

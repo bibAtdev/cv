@@ -31,8 +31,8 @@
     </item>
 </template>
 <script>
-import Item from "@/modules/resume/components/UI/Item"
-import SubItem from "@/modules/resume/components/UI/SubItem"
+import Item from "@/modules/resume/components/Item"
+import SubItem from "@/modules/resume/components/SubItem"
 
 export default {
     name: 'Licenses-Component',

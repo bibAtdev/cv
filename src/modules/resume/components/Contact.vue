@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Item from "@/modules/resume/components/UI/Item";
-import IconText from "@/modules/resume/components/UI/IconText";
+import Item from "@/modules/resume/components/Item";
+import IconText from "@/modules/resume/components/Contact-IconText";
 
 export default {
     name: "Contact-Component",

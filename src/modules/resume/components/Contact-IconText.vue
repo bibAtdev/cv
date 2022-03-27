@@ -2,7 +2,7 @@
     <div class="d-flex align-items-center">
         <i :class="icon" class="me-1"></i>
         <div v-if="href" >
-            <a :href="href" class="text-muted" style="text-decoration: none;">{{ text }} </a>
+            <a :href="href" class="text-muted" style="text-decoration: none;">{{ text }}</a>
         </div>
         <div v-else>{{text}}</div>
     </div>

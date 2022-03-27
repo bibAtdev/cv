@@ -5,7 +5,7 @@
     </item>
 </template>
 <script>
-import Item from "@/modules/resume/components/UI/Item"
+import Item from "@/modules/resume/components/Item"
 
 export default {
     name: 'Languages-Component',

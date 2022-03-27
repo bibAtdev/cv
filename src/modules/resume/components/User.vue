@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Avatar from "@/components/Avatar";
+import Avatar from "@/modules/resume/components/Avatar";
 export default {
     name: "User-Component",
     components: {Avatar}

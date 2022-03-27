@@ -15,8 +15,8 @@
     </item>
 </template>
 <script>
-import Item from "@/components/UI/Item"
-import SubItem from "@/components/UI/SubItem"
+import Item from "@/modules/resume/components/UI/Item"
+import SubItem from "@/modules/resume/components/UI/SubItem"
 
 export default {
     name: 'Education-Component',

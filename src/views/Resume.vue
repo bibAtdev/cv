@@ -29,16 +29,16 @@
 
 <script>
 
-import User from "@/components/User";
-import Contact from "@/components/Contact";
-import Education from "@/components/Education";
-import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
-import Licenses from "@/components/Licenses";
-import About from "@/components/About";
-import Languages from "@/components/Languages";
-import ResumeDownload from "@/components/ResumeDownload";
-import ShuffleColor from "@/components/ShuffleColor";
+import User from "@/modules/resume/components/User";
+import Contact from "@/modules/resume/components/Contact";
+import Education from "@/modules/resume/components/Education";
+import Experience from "@/modules/resume/components/Experience";
+import Skills from "@/modules/resume/components/Skills";
+import Licenses from "@/modules/resume/components/Licenses";
+import About from "@/modules/resume/components/About";
+import Languages from "@/modules/resume/components/Languages";
+import ResumeDownload from "@/modules/resume/components/ResumeDownload";
+import ShuffleColor from "@/modules/resume/components/ShuffleColor";
 
 export default {
     name: 'App',

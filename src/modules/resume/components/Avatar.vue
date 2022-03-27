@@ -1,7 +1,7 @@
 <template>
     <div :style="{width:size,height:size}">
-        <img src="@/assets/avatar-3-1.png" class="avatar position-absolute" :style="{width:size,height:size}">
-        <img ref="avatarHead" src="@/assets/avatar-3-2.png" class="avatar position-absolute"
+        <img src="@/assets/images/avatar-3-1.png" class="avatar position-absolute" :style="{width:size,height:size}">
+        <img ref="avatarHead" src="@/assets/images/avatar-3-2.png" class="avatar position-absolute"
              :style="{width:size,height:size}">
     </div>
 </template>

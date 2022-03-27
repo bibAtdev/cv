@@ -1,14 +1,14 @@
 import { createApp } from 'vue'
 import { createStore } from 'vuex'
-import App from './App.vue'
+import App from './views/Resume.vue'
 
 import BootstrapVue3 from 'bootstrap-vue-3'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import '@fortawesome/fontawesome-free/js/all'
-import './assets/colors.min.css'
-import './assets/style.css'
+import './assets/styles/colors.min.css'
+import './assets/styles/style.css'
 
 //Create state storage
 const store = createStore({

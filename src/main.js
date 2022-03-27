@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createStore } from 'vuex'
-import App from './views/Resume.vue'
+import App from './App.vue'
+import router from './router'
 
 import BootstrapVue3 from 'bootstrap-vue-3'
 import 'bootstrap'
@@ -33,4 +34,5 @@ const store = createStore({
 const app = createApp(App)
 app.use(BootstrapVue3)
 app.use(store)
+app.use(router)
 app.mount('#app')

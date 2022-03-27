@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="container-fluid container-lg">
+    <div id="resume-div" class="container-fluid container-lg">
         <div class="row">
             <div class="col-sm-6 col-md-5 col-xl-4 d-flex flex-column p-4 bg-grey lighten-8">
                 <div class="d-flex justify-content-center mt-4 ">
@@ -41,7 +41,7 @@ import ResumeDownload from "@/modules/resume/components/ResumeDownload";
 import ShuffleColor from "@/modules/resume/components/ShuffleColor";
 
 export default {
-    name: 'App',
+    name: 'Resume-View',
     components: {
         ShuffleColor,
         ResumeDownload,

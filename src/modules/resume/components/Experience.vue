@@ -44,21 +44,55 @@ import Item from "@/modules/resume/components/Item"
 import SubItem from "@/modules/resume/components/SubItem"
 import * as d3 from 'd3'
 
+import { mapGetters } from 'vuex'
+
 export default {
     name: 'Experience-Component',
     components: {Item, SubItem},
+    watch: {
+        mainColor: {
+            handler() {this.updateChart();}
+        }
+    },
     data () {
         return {}
     },
-    mounted () {
-        let data = [4, 8, 15, 16, 23, 42]
-        d3.select('.chart')
-        .selectAll('div')
-        .data(data)
-        .enter().append('div')
-        .style('width', function (d) { return d * 10 + 'px' })
-        .text(function (d) { return d })
+    computed: {
+        ...mapGetters(['mainColor'])
     },
+    mounted () {
+
+        this.plot()
+        
+        //.style("background-color", store.getters.mainColor)
+               
+    },
+    methods:{
+        plot(){
+            console.log("start plotting...")
+
+            let data = [4, 8, 15, 16, 23, 42]
+
+            //d3.select('.chart').remove()
+
+
+            d3.select('.chart')
+                .selectAll('div')
+                .data(data)
+                .enter().append('div'); //plot chart  
+        },
+        updateChart(){
+            //ToDo: transition() manipulates the DOM tree not fast enought, so that refresh works only if clicked ever 5sec
+            console.log("start updating chat with:" +  this.mainColor)
+
+            d3.select('.chart')
+                .selectAll('div')
+                .style('width', function (d) { return d * 10 + 'px' })
+                .style("background-color", this.mainColor)
+                .text(function (d) { return d })
+                .transition()
+        }
+    }
 }
 </script>
 
@@ -68,7 +102,6 @@ export default {
 <style>
 .chart div {
   font: 10px sans-serif;
-  background-color: steelblue;
   text-align: right;
   padding: 3px;
   margin: 1px;
